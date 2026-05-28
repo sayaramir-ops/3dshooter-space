@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Shooter Demo</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+    }
+    #ui {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+    #startLink {
+      color: #0ff;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-right: 20px;
+    }
+    #info {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <span id="startLink">Start Game</span>
+    <span id="info">WASD = move, Mouse = look, Click = shoot</span>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Three.js CDN -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+  <!-- Game logic -->
+  <script src="game.js"></script>
+</body>
+</html>
